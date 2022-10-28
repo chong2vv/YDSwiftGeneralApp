@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B2E30674465769D3B1E084E /* libPods-YDSwiftGeneralApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5298B70C72FFEC86F93D0 /* libPods-YDSwiftGeneralApp.a */; };
 		157FE2C2290ACBCF0069E602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2C1290ACBCF0069E602 /* AppDelegate.swift */; };
 		157FE2C4290ACBCF0069E602 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2C3290ACBCF0069E602 /* SceneDelegate.swift */; };
 		157FE2C6290ACBCF0069E602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FE2C5290ACBCF0069E602 /* ViewController.swift */; };
@@ -49,6 +50,9 @@
 		157FE2DE290ACBD00069E602 /* YDSwiftGeneralAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDSwiftGeneralAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157FE2E2290ACBD00069E602 /* YDSwiftGeneralAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSwiftGeneralAppUITests.swift; sourceTree = "<group>"; };
 		157FE2E4290ACBD00069E602 /* YDSwiftGeneralAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDSwiftGeneralAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24D5298B70C72FFEC86F93D0 /* libPods-YDSwiftGeneralApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDSwiftGeneralApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE5CD8153CB2BB2A56EA644 /* Pods-YDSwiftGeneralApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDSwiftGeneralApp.debug.xcconfig"; path = "Target Support Files/Pods-YDSwiftGeneralApp/Pods-YDSwiftGeneralApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F4739D07A477557430D1E3AA /* Pods-YDSwiftGeneralApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDSwiftGeneralApp.release.xcconfig"; path = "Target Support Files/Pods-YDSwiftGeneralApp/Pods-YDSwiftGeneralApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2E30674465769D3B1E084E /* libPods-YDSwiftGeneralApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				157FE2D7290ACBD00069E602 /* YDSwiftGeneralAppTests */,
 				157FE2E1290ACBD00069E602 /* YDSwiftGeneralAppUITests */,
 				157FE2BF290ACBCF0069E602 /* Products */,
+				EF4D7563CAF74C99C1C1A11F /* Pods */,
+				7A6F7638F6BD8D7108A5742C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,24 @@
 			path = YDSwiftGeneralAppUITests;
 			sourceTree = "<group>";
 		};
+		7A6F7638F6BD8D7108A5742C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24D5298B70C72FFEC86F93D0 /* libPods-YDSwiftGeneralApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF4D7563CAF74C99C1C1A11F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE5CD8153CB2BB2A56EA644 /* Pods-YDSwiftGeneralApp.debug.xcconfig */,
+				F4739D07A477557430D1E3AA /* Pods-YDSwiftGeneralApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 157FE2E8290ACBD00069E602 /* Build configuration list for PBXNativeTarget "YDSwiftGeneralApp" */;
 			buildPhases = (
+				9C51213AD2585694E42967B1 /* [CP] Check Pods Manifest.lock */,
 				157FE2BA290ACBCF0069E602 /* Sources */,
 				157FE2BB290ACBCF0069E602 /* Frameworks */,
 				157FE2BC290ACBCF0069E602 /* Resources */,
+				C4A98454FF025B539AA415C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C51213AD2585694E42967B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YDSwiftGeneralApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A98454FF025B539AA415C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDSwiftGeneralApp/Pods-YDSwiftGeneralApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDSwiftGeneralApp/Pods-YDSwiftGeneralApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDSwiftGeneralApp/Pods-YDSwiftGeneralApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		157FE2BA290ACBCF0069E602 /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		157FE2E9290ACBD00069E602 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE5CD8153CB2BB2A56EA644 /* Pods-YDSwiftGeneralApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +530,7 @@
 		};
 		157FE2EA290ACBD00069E602 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4739D07A477557430D1E3AA /* Pods-YDSwiftGeneralApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
